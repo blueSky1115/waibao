@@ -1,0 +1,145 @@
+@import 'variables';
+// 前缀
+.prefix(@style; @value){
+    -webkit-@{style}: @value;
+       -moz-@{style}: @value;
+        -ms-@{style}: @value;
+         -o-@{style}: @value;
+            @{style}: @value;
+}
+
+// ************************************************* 分割线 *************************************************
+
+// ◆◆ 常用样式
+// ◆◆ 宽全屏
+.width-full(@color: transparent){
+	width: 100%;
+	// min-width: @main-width + 30;
+	min-width: @main-width;
+	background: @color;
+}
+
+// ◆◆ div居中
+.dc(@margin-top-bottom: 0px; @width:@main-width){
+	margin: @margin-top-bottom auto;
+	width: @width;
+	// padding: 0 15px;
+}
+
+// ◆◆ margin居中
+.mc(@margin-top-bottom: 0px){
+	margin: @margin-top-bottom auto;
+}
+
+// ◆◆ 绝对定位，块级化宽高百分百，适用于遮罩
+.full-mask(){
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+// ◆◆ 单行文本溢出隐藏
+.text-overflow(){
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+}
+
+// ◆◆ border 1px red（用于测试）
+.b(@color: red; @width: 1px){
+	border: @width solid @color;
+}
+
+// ◆◆ 浮动
+.fl(@left: left){
+	float: @left;
+	display: inline;
+}
+.fr(@right: right){
+	float: @right;
+	display: inline;
+}
+
+// ◆◆ 清除浮动
+.clearfix(){
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	zoom: 1;
+}
+
+// ◆◆ 透明度（兼容IE）
+.opacity(@alpha: 0.8) {
+	@ie6-alpha: (@alpha * 100);
+
+	opacity: @alpha;
+	filter: ~'alpha(opacity=@{ie6-alpha})';
+}
+
+// ◆◆ 输入框聚焦发光	&:focus
+.input-shadow(@a: 0px 0px 10px #CBD1FF){
+	.box-shadow(@a);
+}
+// ************************************************* 分割线 *************************************************
+
+// ◆◆ border-radius  圆角
+.border-radius(@a: 50%){
+	.prefix(border-radius; @a);
+}
+
+// ◆◆ box-sizing  盒子大小
+.box-sizing(@a: border-box){
+	.prefix(box-sizing; @a);
+}
+
+// ◆◆ box-shadow  盒子阴影
+.box-shadow(@a: 4px 4px 3px #CCC){
+	.prefix(box-shadow; @a);
+}
+
+// ◆◆ text-shadow  文字阴影
+.text-shadow(@a: 4px 4px 3px #CCC){
+	.prefix(text-shadow; @a);
+}
+
+// ◆◆ transition 属性过渡
+.transition(@a: all .2s ease-in-out){
+	.prefix(transition; @a);
+}
+
+// ◆◆ transform  形变
+// ◆◆ transform:rotate  形变 ———— 旋转
+.rotate(@a: 180deg){
+	.prefix(transform; rotate(@a));
+}
+
+// ◆◆ transform:translate  形变 ———— 移动
+.translate(@a: 10px; @b:10px){
+	.prefix(transform; translate(@a, @b));
+}
+
+// ◆◆ transform:scale  形变 ———— 缩放
+.scale(@a: 2; @b: 2){
+	.prefix(transform; scale(@a, @b));
+}
+
+// ◆◆ transform:skew  形变 ———— 扭曲
+.skew(@a: 10deg){
+	.prefix(transform; skew(@a));
+}
+
+// ◆◆ transform:matrix  形变 ———— 矩阵
+.matrix(@a:1; @b:1; @c:-1; @d:0; @e:0; @f:0){
+	.prefix(transform; matrix(@a, @b, @c, @d, @e, @f));
+}
+
+// ◆◆ transform-origin  形变 ———— 形变基准点
+.transform-origin(@a: center center){
+	.prefix(transform-origin; @a);
+}
