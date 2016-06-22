@@ -1,0 +1,40 @@
+html {
+  font-family: '微软雅黑', "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  min-width: 1200px;
+  background: #f3f3f3;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  border: none;
+}
+a {
+  color: #666666;
+  text-decoration: none;
+  outline: none;
+}
+input {
+  -webkit-appearance: none;
+  outline: none;
+}
