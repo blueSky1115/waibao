@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺列表页</title>
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+<!--店铺头部start -->
+<header class="shop-header">
+    <!-- start topbar -->
+    <div class="topbar">
+        <div class="content">
+            <div class="topbar-left">
+                欢迎光临LIFORO!　
+                请<a href="login.html">登录</a>　
+                <a href="register.html">免费注册</a>
+            </div>
+            <div class="topbar-right">
+                <div class="dropdown">
+                    <p>我的LIFORD<i class="iconfont fr">&#xe60d;</i></p>
+                    <ul>
+                        <li><a href="#">商家中心</a></li>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">运营服务</a></li>
+                        <li><a href="#">商家品控</a></li>
+                        <li><a href="#">商家工具</a></li>
+                        <li><a href="#">商家规则</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="">我关注的品牌</a>
+                </div>
+                <div>
+                    <a href="">
+                        <i class="iconfont i-red i-bold">&#xe616;</i>
+                        购物车<mark>8</mark>件
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <p>收藏夹<i class="iconfont fr">&#xe60d;</i></p>
+                    <ul>
+                        <li><a href="#">商家中心</a></li>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">运营服务</a></li>
+                        <li><a href="#">商家品控</a></li>
+                        <li><a href="#">商家工具</a></li>
+                        <li><a href="#">商家规则</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe60f;</i>手机端
+                    </a>
+                </div>
+                <div class="dropdown topbar-support">
+                    <p>商家支持<i class="iconfont fr">&#xe60d;</i></p>
+                    <ul>
+                        <h3>商家：</h3>
+                        <li><a href="#">商家中心</a></li>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">运营服务</a></li>
+                        <li><a href="#">商家品控</a></li>
+                        <li><a href="#">商家工具</a></li>
+                        <li><a href="#">商家规则</a></li>
+
+                        <h3>帮助：</h3>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">客服中心</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown topbar-menu">
+                    <p>
+                        <i class="iconfont i-red i-bold fl">&#xe614;</i> 网站导航
+                    </p>
+                    <div>
+                        <dl>
+                            <dt>特色主题</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长方正城</a></li>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三方正方正星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长城</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>特色主题</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长方正城</a></li>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三方正方正星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长城</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>特色主题</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长方正城</a></li>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三方正方正星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长城</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="noborder">
+                            <dt>特色主题</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长方正城</a></li>
+                                    <li><a href="#">TCL</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三方正方正星</a></li>
+                                    <li><a href="#">方正</a></li>
+                                    <li><a href="#">宏基</a></li>
+                                    <li><a href="#">惠普</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">华硕</a></li>
+                                    <li><a href="#">长城</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end topbar -->
+
+    <!--头部搜索框 start-->
+    <div class="header-serch">
+        <div class="serch-box">
+            <!--店铺Logo-->
+            <div class="shop-logo">
+                <img src="img/logo.png" alt="店铺名称">
+                <div class="logo-line"></div>
+                <div class="shop-content">
+                    <h1>MUNAIYI沐乃衣专营店</h1>
+                    <p>
+                        <span>描述: <em>4.7-</em></span>
+                        <span>服务: <em>4.7∧</em></span>
+                        <span>发货: <em class="goods">4.7∨</em></span>
+                    </p>
+                </div>
+            </div>
+            <!--输入搜索-->
+            <div class="serch-input">
+                <div>
+                    <div class="input-text">
+                        <input type="text" value="" placeholder="女王大人往这看">
+                        <a href="#" class="serch-market">搜商场</a>
+                    </div>
+                    <a href="#" class="serch-shop">搜本店</a>
+                </div>
+                <p>
+                    <a href="#">连衣裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">连衣裙</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--头部搜索框 end-->
+
+    <!--头部店铺动态部分 start-->
+    <div class="shop-dynamic">
+        <div class="dynamic-box">
+            <!--店铺更新-->
+            <div class="shop-update">
+                <div class="shop-title">
+                    <h2>MUNAIYI</h2>
+                    <h3>沐乃衣</h3>
+                </div>
+                <div class="shop-line"></div>
+                <div class="dynamic">
+                    <h3>每周一/四 上午10点准时更新</h3>
+                    <p>关注店铺微博:<a href="#">沐乃衣日航女装</a></p>
+                </div>
+            </div>
+            <!--店铺二维码-->
+            <div class="shop-code">
+                <div class="serch-shop">
+                    <p>加入微淘圈子</p>
+                    <p>晒好物</p>
+                    <p>立返5元</p>
+                    <div>
+                        <span class="serch-btn iconfont icon-sousuo" href="#"></span>
+                        <input type="text" value="" placeholder="连衣裙">
+                    </div>
+                </div>
+                <img src="img/code.png" alt="扫描二维码">
+            </div>
+        </div>
+
+    </div>
+    <!--头部店铺动态部分 end-->
+</header>
+<!--店铺头部end -->
+
+<!--店铺导航start-->
+<div class="shop-nav">
+    <div class="nav-box">
+        <ul class="nav-list">
+            <li id="all-shop">
+                <a class="all-shop active" href="#">全部商品</a>
+                <div class="second-nav" id="second-nav">
+                    <ul>
+                        <li><a href="#">所有宝贝</a></li>
+                        <li><a href="#">分类1</a></li>
+                        <li><a href="#">分类2</a></li>
+                        <li>
+                            <a href="#">分类3<span>></span></a>
+                            <ul>
+                                <li><a href="#">分类1</a></li>
+                                <li><a href="#">分类2</a></li>
+                                <li><a href="#">分类3</a></li>
+                                <li><a href="#">分类4</a></li>
+                                <li><a href="#">分类5</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">分类4<span>></span></a>
+                            <ul>
+                                <li><a href="#">分类1</a></li>
+                                <li><a href="#">分类2</a></li>
+                                <li><a href="#">分类3</a></li>
+                                <li><a href="#">分类4</a></li>
+                                <li><a href="#">分类5</a></li>
+                                <li><a href="#">分类4</a></li>
+                                <li><a href="#">分类5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">分类5</a></li>
+                        <li><a href="#">分类4</a></li>
+                        <li><a href="#">分类5</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">店铺评论</a></li>
+            <li><a href="#">店铺留言</a></li>
+            <li><a href="#">团购商品</a></li>
+            <li><a href="#">抢购商品</a></li>
+            <li><a href="#">实体优惠券</a></li>
+            <li><a href="#">竞拍商品</a></li>
+            <li><a href="#">线下优惠券</a></li>
+            <li><a href="#">资讯</a></li>
+        </ul>
+    </div>
+</div>
+<!--店铺导航end-->
+<!----------------------------------------->
+
+<!--列表内容 start-->
+<div class="list-content">
+
+    <div class="list-box">
+        <!--左边容器-->
+        <div class="list-left-box">
+            <!--店内搜索-->
+            <div class="shop-serch">
+                <div class="list-title-box">
+                    <h3>店内搜索</h3>
+                    <span class="icon icon-sousuo iconfont"></span>
+                </div>
+                <div class="conment-content">
+                    <div class="shop-serch-content">
+                        <p class="keyword">
+                            <span>关键字</span><input type="text" value="零食">
+                        </p>
+                        <p class="prize">
+                            <span>价格</span><input type="text" value="" placeholder="¥">-<input type="text" value="" placeholder="¥">
+                        </p>
+                        <a class="serch-btn" href="#">搜索</a>
+                    </div>
+                </div>
+            </div>
+            <!--商品分类-->
+            <div class="shop-class" id="shop-class">
+                <div class="list-title-box">
+                    <h3>商品分类</h3>
+                    <span class="icon icon-quanbu iconfont"></span>
+                </div>
+                <div class="conment-content">
+                    <div class="shop-class-box">
+                        <div class="shop-class-content">
+                            <h4>新品专区<span class="shop-showBtn">+</span></h4>
+                            <ul class="shop-list">
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shop-class-box">
+                        <div class="shop-class-content">
+                            <h4>新品专区<span class="shop-showBtn">+</span></h4>
+                            <ul class="shop-list active">
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shop-class-box">
+                        <div class="shop-class-content">
+                            <h4>新品专区<span class="shop-showBtn">+</span></h4>
+                            <ul class="shop-list">
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a></li>
+                                <li><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a><a href="#">米线</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--商品排行-->
+            <div class="shop-top">
+                <div class="list-title-box">
+                    <h3>商品排行</h3>
+                    <span class="icon icon-caidan1 iconfont"></span>
+                </div>
+                <div class="conment-content">
+                    <div class="listBox">
+                        <ul class="list">
+                            <li>
+                                <img src="img/listImage01.png" alt="">
+                                <div>
+                                    <h4>10枚鲜花饼 云南特产</h4>
+                                    <p class="sale-price">¥ <strong>18.80</strong></p>
+                                    <p class="sale-count">已出售<span>11236</span>笔</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/listImage01.png" alt="">
+                                <div>
+                                    <h4>10枚鲜花饼 云南特产</h4>
+                                    <p class="sale-price">¥ <strong>18.80</strong></p>
+                                    <p class="sale-count">已出售<span>11236</span>笔</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/listImage01.png" alt="">
+                                <div>
+                                    <h4>10枚鲜花饼 云南特产</h4>
+                                    <p class="sale-price">¥ <strong>18.80</strong></p>
+                                    <p class="sale-count">已出售<span>11236</span>笔</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/listImage01.png" alt="">
+                                <div>
+                                    <h4>10枚鲜花饼 云南特产</h4>
+                                    <p class="sale-price">¥ <strong>18.80</strong></p>
+                                    <p class="sale-count">已出售<span>11236</span>笔</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/listImage01.png" alt="">
+                                <div>
+                                    <h4>10枚鲜花饼 云南特产</h4>
+                                    <p class="sale-price">¥ <strong>18.80</strong></p>
+                                    <p class="sale-count">已出售<span>11236</span>笔</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--右边容器-->
+        <div class="list-right-box">
+            <!--上部筛选-->
+            <div class="filter-box">
+                <!--筛选结果-->
+                <div class="select-box">
+                    <div class="serch">
+                        <span>所有商品</span>
+                        <div>
+                            <input type="text" placeholder="在当前结果中搜索">
+                            <span class="icon-sousuo iconfont"></span>
+                        </div>
+                    </div>
+                    <div class="select-content">
+                        <div class="item">
+                            分类: <span>默认</span>
+                            <i class="delete">X</i>
+                        </div>
+                        <div class="item">
+                            尺码: <span>均码</span>
+                            <i class="delete">X</i>
+                        </div>
+                        <div class="item">
+                            风格: <span>韩版</span>
+                            <i class="delete">X</i>
+                        </div>
+                    </div>
+                    <div class="filter-condition">筛选条件∨</div>
+                </div>
+                <!--筛选列表-->
+                <ul class="select-list">
+                    <li>
+                        <div class="select-content-title">商品分类:</div>
+                        <div class="select-items">
+                            <span class="active">默认</span>
+                            <span>毛呢外套</span>
+                            <span>连衣裙</span>
+                            <span>精品风衣</span>
+                            <span>雪纺杉</span>
+                            <span>裤子</span>
+                            <span>半身裙</span>
+                            <span>西装外套</span>
+                            <span>T恤&吊带</span>
+                            <span>针织毛衣</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="select-content-title">尺码:</div>
+                        <div class="select-items">
+                            <span class="active">默认</span>
+                            <span>均码</span>
+                            <span>M</span>
+                            <span>XL</span>
+                            <span>L</span>
+                            <span>S</span>
+                            <span>XXL</span>
+                            <span>XXL</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="select-content-title">风格:</div>
+                        <div class="select-items">
+                            <span>通勤</span>
+                            <span class="active">韩版</span>
+                            <span>白搭</span>
+                            <span>OL风格</span>
+                            <span>甜美</span>
+                            <span>优雅</span>
+                            <span>日系</span>
+                            <span>原创设计</span>
+                            <span>瑞丽</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--列表内容-->
+            <div class="list-box-content">
+                <!--头部排序选择-->
+                <div class="list-sort-box">
+                    <div class="default active">默认排序</div>
+                    <div class="sales-volume">销量<span class="iconfont icon-paixu"></span></div>
+                    <div class="sales-volume">新品<span class="iconfont icon-paixu"></span></div>
+                    <div class="sales-volume">收藏<span class="iconfont icon-paixu"></span></div>
+                    <div class="sales-volume">价格<span class="iconfont icon-paixu"></span></div>
+                    <div class="select-box">
+                        <select name="discount" id="discount">
+                            <option value="选择折扣">选择折扣</option>
+                            <option value="选择折扣1">选择折扣1</option>
+                            <option value="选择折扣2">选择折扣2</option>
+                        </select>
+                    </div>
+                    <div class="prize-box">
+                        <input type="text" placeholder="¥">
+                        <span>-</span>
+                        <input type="text" placeholder="¥">
+                    </div>
+                    <div class="part-box">
+                        <div class="active"><span class="iconfont icon-quanbu"></span>大图</div>
+                        <div><span class="iconfont icon-caidan"></span>列表</div>
+                    </div>
+                    <!--下航线-->
+                    <div class="bottom-line"></div>
+                </div>
+
+                <!--商品列表-->
+                <div class="shop-list-content" id="ShoplistContent">
+                    <ul>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="bigImg" src="img/shop01.jpg" alt="">
+                            <div class="shop-content">
+                                <span class="prev btn iconfont icon-left"></span>
+                                <span class="next btn iconfont icon-right"></span>
+                                <div class="imgs">
+                                    <ul class="imgs-list">
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                        <li><img src="img/suo.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-title">
+                                    <h4>MOJAY秋冬装MOJAY秋冬装秋冬装秋冬装秋冬装MOJAY秋冬装</h4>
+                                    <p>¥19.9</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--脚部-->
+                <div class="list-foot">
+                    <div class="list-foot-box">
+                        <div class="M-box3"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--列表内容 end-->
+
+
+
+
+
+
+<!----------------------------------------->
+<!--底部 start-->
+<!--配送方式开始 -->
+<div class="cpei">
+    <div class="content">
+        <ul>
+            <li>
+                <a href="">
+                    <em class="iconfont icon-pinzhi"></em>
+                    <b>品质保证</b>
+                    <p>品质护航 购物无忧</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <em class="iconfont icon-qitian"></em>
+                    <b>7天无理由退换货</b>
+                    <p>为您提供售后无忧保障</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <em class="iconfont icon-fuwu"></em>
+                    <b>特色服务体验</b>
+                    <p>为您呈现不一样的服务</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <em class="iconfont icon-bangzhu"></em>
+                    <b>帮助中心</b>
+                    <p>您的购物指南</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--配送方式结束 -->
+
+<!--店铺底部开始 -->
+<div class="footer">
+    <div class="content">
+        <ul class="fnavList">
+            <li>特殊服务
+                <ul>
+                    <li><a href="">延保服务</a></li>
+                </ul>
+            </li>
+            <li>售后服务
+                <ul>
+                    <li><a href="">服务承诺</a></li>
+                    <li><a href="">联系客服</a></li>
+                </ul>
+            </li>
+            <li>支付方式
+                <ul>
+                    <li><a href="">网银支付</a></li>
+                    <li><a href="">银行转账</a></li>
+                </ul>
+            </li>
+            <li>配送方式
+                <ul>
+                    <li><a href="">上门自提</a></li>
+                    <li><a href="">顺丰速运</a></li>
+                </ul>
+            </li>
+            <li>购物指南
+                <ul>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">购物流程</a></li>
+                </ul>
+            </li>
+            <li>商家合作
+                <ul>
+                    <li><a href="">关于正品汇</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="fcode">
+            <div><img src="img/code.png" alt=""></div>　
+            <div><img src="img/code.png" alt=""><br>关注于们</div>
+        </div>
+        <div class="fline">
+            厦门正品汇电子商务有限公司 XIAMEN ZHENG PIN HUI E-COMMERCE NC, ALL Rights Reserved 闽备15013737号-1 <br>
+            <img src="img/s08.png" alt="">　
+            <img src="img/s09.png" alt="">
+        </div>
+    </div>
+</div>
+<!--店铺底部结束 -->
+<!--底部 end-->
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.pagination.min.js"></script>
+<script src="js/list.js"></script>
+</html>
